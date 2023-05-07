@@ -1,0 +1,32 @@
+.container {
+  background-color: #3d84a8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.titleWrapper {
+  background-color: coral;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-bottom: solid 1px black;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: solid 1px black;
+  margin-bottom: 30px;
+}
+.line {
+  border-bottom: solid black 1px;
+}
+
+.infoWrapper {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}

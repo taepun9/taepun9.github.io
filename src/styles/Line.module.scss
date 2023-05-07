@@ -1,0 +1,16 @@
+.line {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  font-size: 20px;
+  margin: 8px 15px;
+  &::after {
+    content: "";
+    flex-grow: 1;
+    margin: 0 20px 0 15px;
+    background: #000;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+  }
+}

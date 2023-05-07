@@ -1,0 +1,12 @@
+.container {
+  min-width: 220px;
+  display: flex;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}

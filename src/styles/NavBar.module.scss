@@ -1,0 +1,35 @@
+.container {
+  background-color: #48466d;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  // opacity: 0.2;
+}
+
+.title {
+  max-width: 90px;
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.menuSet {
+  max-width: 550px;
+  min-width: 300px;
+  width: 30%;
+  display: flex;
+  margin-left: auto;
+}
+.menuWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pointer {
+  cursor: pointer;
+}
