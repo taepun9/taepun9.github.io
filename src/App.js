@@ -1,11 +1,10 @@
 import React, { useRef } from "react";
-import "./App.scss";
+import "./global.scss";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import ProjectsRenewal from "./components/Projects";
 
 function App() {
   const aboutMeRef = useRef(null);
@@ -35,7 +34,7 @@ function App() {
       <Header />
       <AboutMe aboutMeRef={aboutMeRef} />
       <Skills skillsRef={skillsRef} />
-      <ProjectsRenewal projectsRef={projectsRef} />
+      <Projects projectsRef={projectsRef} />
     </div>
   );
 }

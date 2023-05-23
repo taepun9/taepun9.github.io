@@ -125,3 +125,81 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+// 데스크탑
+.navTypo {
+  font-size: 20px;
+}
+.sectionTypo {
+  font-size: 30px;
+}
+.projectsTitle {
+  font-size: 70px;
+}
+.projectsTitleBoxHeight {
+  height: 150px;
+}
+.lineTitle {
+  font-size: 22px;
+}
+
+div {
+  font-size: 21px;
+}
+p {
+  font-size: 20px;
+}
+
+// 테블릿
+@media (max-width: 768px) {
+  /* 뷰포트 너비가 768px 이하인 경우 */
+  .navTypo {
+    font-size: 18px;
+  }
+  .sectionTypo {
+    font-size: 28px;
+  }
+  .projectsTitle {
+    font-size: 60px;
+  }
+  .projectsTitleBoxHeight {
+    height: 130px;
+  }
+  .lineTitle {
+    font-size: 15px;
+  }
+
+  div {
+    font-size: 15px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+// 모바일
+@media (max-width: 480px) {
+  /* 뷰포트 너비가 480px 이하인 경우 */
+  .navTypo {
+    font-size: 16px;
+  }
+  .sectionTypo {
+    font-size: 26px;
+  }
+  .projectsTitle {
+    font-size: 45px;
+  }
+  .projectsTitleBoxHeight {
+    height: 110px;
+  }
+  .lineTitle {
+    font-size: 13px;
+  }
+
+  div {
+    font-size: 13px;
+  }
+  p {
+    font-size: 12px;
+  }
+}

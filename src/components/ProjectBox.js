@@ -1,4 +1,5 @@
 import React from "react";
+import "../global.scss";
 import styles from "../styles/ProjectBox.module.scss";
 import Line from "./Line";
 
@@ -10,11 +11,13 @@ const ProjectBox = ({
 }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.titleBox}>
-        <h1 className={styles.title}>{projectName}</h1>
+      <div className={`${styles.titleBox} projectsTitleBoxHeight`}>
+        <h1 className={`${styles.title} projectsTitle`}>{projectName}</h1>
       </div>
       <div className={styles.content}>
+        <Line>프로젝트 설명</Line>
         <p className={styles.description}>{description1}</p>
+        <Line>실행화면</Line>
         {resList.project.map(({ photo1, photo2, label1, label2 }, idx) => {
           return (
             <div className={styles.photoSet} key={`${label1}_${idx}`}>

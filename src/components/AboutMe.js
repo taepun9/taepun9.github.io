@@ -1,4 +1,5 @@
 import React from "react";
+import "../global.scss";
 import styles from "../styles/AboutMe.module.scss";
 import InfoItem from "./InfoItem";
 import {
@@ -13,7 +14,7 @@ import {
 const AboutMe = ({ aboutMeRef }) => {
   return (
     <div className={styles.container} ref={aboutMeRef}>
-      <h1 className={styles.title}>About Me</h1>
+      <h1 className={`${styles.title} sectionTypo`}>About Me</h1>
       <div className={styles.infoWrapper}>
         <InfoItem icon={<FaUser />} infoName={"이름"} content={"정재훈"} />
         <InfoItem

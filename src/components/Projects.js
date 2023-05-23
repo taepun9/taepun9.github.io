@@ -1,4 +1,5 @@
 import React from "react";
+import "../global.scss";
 import styles from "../styles/Projects.module.scss";
 import ProjectBox from "./ProjectBox";
 
@@ -62,23 +63,23 @@ const Projects = ({ projectsRef }) => {
 
   return (
     <div className={styles.container} ref={projectsRef}>
-      <h1 className={styles.title}>Projects</h1>
-      <ProjectBox
-        projectName={"위치기반 사진분류"}
-        description1={
-          "  사진의 GPS 정보를 통해 지정한 범위 안에 포함되는 사진을 분류하는 프로그램"
-        }
-        resList={resList1}
-      />
+      <h1 className={`${styles.title} sectionTypo`}>Projects</h1>
       <ProjectBox
         projectName={"피플카운터"}
         description1={
-          "출입구 통과 인원을 카메라로 인식하여 카운트 현재 인원 수와 밀집도 등 웹페이지에서 확인 가능하도록 구현한 프로젝트"
+          "대학교 재학 당시 캡스톤디자인 과제로 수행한 프로젝트입니다. 프로젝트를 수행할 시점 코로나19가 한창 유행하던 시기로 카메라를 통해서 건물에 들어오는 사람을 카운트하여 상점이나 강의실과 같은 곳의 인원 제한에 활용하자는 취지에서 수행한 프로젝트입니다."
         }
         resList={resList2}
         description2={
-          "대학교 재학 당시, 캡스톤디자인 과제로 수행한 프로젝트로 백엔드 작업과 딥러닝 학습 진행을 담당"
+          "DB 테이블 생성과 API 구현, 딥러닝 모델 생성을 담당했습니다."
         }
+      />
+      <ProjectBox
+        projectName={"위치기반 사진분류"}
+        description1={
+          "지인의 부탁으로 진행하게 된 프로젝트로 사진의 GPS 정보를 이용하여 사용자가 지정한 범위 안에 포함되는 사진을 분류해주는 프로그램입니다."
+        }
+        resList={resList1}
       />
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import "../global.scss";
 import styles from "../styles/Skills.module.scss";
 import SkillBox from "./SkillBox";
 import ReactLogo from "../images/logo/react.png";
@@ -11,7 +12,7 @@ import PythonLogo from "../images/logo/python.png";
 const Skills = ({ skillsRef }) => {
   return (
     <div className={styles.container} ref={skillsRef}>
-      <h1 className={styles.title}>Skills</h1>
+      <h1 className={`${styles.title} sectionTypo`}>Skills</h1>
       <div className={styles.skillsWrapper}>
         <SkillBox title={"Frontend"}>
           <img src={ReactLogo} className={styles.logo} />
